@@ -115,6 +115,11 @@ img{
   margin-bottom: 1rem;
 }
 
+.texto-presentacion .fuente {
+
+  font-size: 2rem;
+  color:rgb(107, 107, 107);
+}
 .texto-presentacion h2{
   display:flex;
   justify-content:left;
