@@ -35,7 +35,7 @@
 .texto-encabezado h2{
 
     color:white;
-    font-size: 3rem;
+    font-size: 5rem;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -69,7 +69,7 @@ video{
 
 .texto-presentacion{
   font-family:Arial, Helvetica, sans-serif;
-  color:rgb(60, 57, 57);
+  color:rgb(238, 234, 234);
 
 
 }
@@ -118,9 +118,96 @@ img{
 .texto-presentacion .fuente {
 
   font-size: 2rem;
-  color:rgb(107, 107, 107);
+  color:rgb(172, 171, 171);
 }
 .texto-presentacion h2{
   display:flex;
   justify-content:left;
+}
+
+
+body  {
+  height: 100vh;
+  background:linear-gradient(to left, rgb(10, 12, 13), rgb(33, 33, 37), rgb(0, 0, 0));
+}
+
+/* el texto de que te espera en el evento*/
+
+.texto-separador{
+
+  display:flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:white;
+}
+
+/*cartas*/
+
+.carta1{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+  
+/*formulario*/
+
+.form-label{
+  color:white;
+}
+
+.formulario-usuario{
+  padding-left:15rem;
+  padding-right: 15rem;
+  padding-top: 5rem;
+}
+.texto-separador2{
+
+  display:flex;
+  justify-content: center;
+  padding-top: 6rem;
+ 
+  font-size: 5rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:white;
+}
+/* Media Queris */
+
+@media screen and (max-width: 450px){
+  #texto-encabezado1{  
+    width: 10%;
+    padding-top: 5rem;
+    justify-content: center;
+    display:flex;
+    font-size: 2.5rem;
+  }
+  #texto-d-encabezado1{
+
+    display:flex;
+    justify-content: center;
+    font-size: 1rem;
+    color:white;
+  }
+  #texto-separador1{
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: center;
+    padding:3rem;
+  }
+
+  #imagen-presentacion{
+    display:block;
+    padding:2rem;
+
+
+  }
+
+  #primera-imagen{
+    display:block;
+    margin-bottom: 1rem;
+   
+  }
+
+
 }
