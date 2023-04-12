@@ -159,34 +159,52 @@
 <h2 class="texto-separador2" id="texto-separador2">Consigue tu entrada ahora</h2>
 </section>
 
-<div id="resultadoValidacion">
-</div>
+<form class="row g-3 formulario-usuario" id="registrarDatos" name="registrarDatos" action="#" method="post">
+  <div class="col-md-6" >
+    <label for="inputEmail4" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="apellido" name="apellido" required>
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Obligatorio" required>
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Codigo postal</label>
+    <input type="number" name="zip" class="form-control" id="inputAddress2" placeholder="" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Teléfono de contacto</label>
+    <input type="text" name= "telefono" class="form-control" id="inputCity">
+  </div>
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">Dia del Evento</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>25/05/23</option>
+      <option>26/05/23</option>
+      <option>27/05/23</option>
 
-<form action="#" method="post" name="registrarDatos" id="registrarDatos" >
-    <fieldset>
-        <legend>Formulario de Captura de Datos</legend>
-        <div>
-            <label for="nombre">Nombre (obligatorio):</label>
-            <input type="text" id="nombre" name="nombre" value="" />
-        </div>
-        <div>
-            <label for="correo">Correo (obligatorio):</label>
-            <input type="text" id="correo" name="correo" value="">
-        </div>
-        <div>
-            <label>Sitio Web:</label>
-            <input type="text" id="url" name="url" value="">
-        </div>
-
-        <div>
-            <label>Tarjeta de Crédito:</label>
-            <input type="text" id="tarjetaCredito" name="tarjetaCredito" value="">
-        </div>
-
-        <div>
-            <input type="submit" value="Submit">
-        </div>
-    </fieldset>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Cantidad de Entradas</label>
+    <input type="number" class="form-control" id="inputZip">
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Acepto las bases y condiciones
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
 </form>
 <!--FOOTERCITO-->
 <footer>
@@ -197,25 +215,25 @@
     <div>
     <ul class="opciones">
       <li><a href="#">Contacto</a></li>
-      <li><a href="#">Entrevistas</a></li>
-      <li><a href="#">Bases y condiciones</a></li>
-      <li><a href="#">Produccion</a></li>
+      <li><a href="https://business.vogue.es/tags/entrevista/16" target="_blank">Entrevistas</a></li>
+      <li><a href="https://www.argentina.gob.ar/sites/default/files/2023/01/anexo_6778777_1.pdf" target="_blank">Bases y condiciones</a></li>
+      <li><a href="https://www.vogue.com/fashion-shows?utm_medium=internal&utm_source=vogue.es" target="_blank">Produccion</a></li>
     </ul>
     </div>
     <div>
       <ul class="opciones">
         <li><a href="#" >Boton de arrepentimiento</a></li>
-        <li><a href="#">GLAMOUR.ES</a></li>
-        <li><a href="#">VOGUE</a></li>
+        <li><a href="https://www.glamour.es/moda" target="_blank">GLAMOUR.ES</a></li>
+        <li><a href="https://www.cosmeticosvogue.com.ar/" target="_blank">VOGUE</a></li>
         
       </ul>
       </div>
       
 
     <ul class="social-icons">
-      <li><a href="#"><i class="lab la-twitter"></i></a></li>
-      <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
-      <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+      <li><a href="https://twitter.com/VogueMexico" target="_blank"><i class="lab la-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/Vogue/" target="_blank"><i class="lab la-facebook-f"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/vogue/?trk=public_profile_experience-item_profile-section-card_image-click&originalSubdomain=ar" target="_blank"><i class="lab la-linkedin-in"></i></a></li>
     </ul>
 
     <div class="footer2">
