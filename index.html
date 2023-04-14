@@ -10,38 +10,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar justify-content-center" data-bs-theme="dark">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
-<!--Header con opciones-->    
-    <div class="contenedor-navegacion justify-content-center">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-          <img src="./img/icono.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-          Amélie Pasarelas
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#presentacionid">Quienes somos</a>
-              </li>
-              <a class="nav-link" href="#comprarentrada">Entradas</a> 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Trabaja con nosotros</a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://eamoda.com.ar/estudia/modelo-profesional/" class="dropdown-item" target="_blank">Modelaje</a></li>
-                    <li><a href="https://espaciobuenosaires.com.ar/modulo/produccion-de-desfiles/" class="dropdown-item" target="_blank">Produccion</a></li>
-                </ul>
-            </li>
-            </div>
-          </div>
-        </div>
-      </nav>
-      </nav>
-    </div>
+<!--HEADER FIJO-->
+<header id="header">
+  <a href="#" class ="logo">Amelie</a>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#presentacionid">Quienes somos</a></li>
+      <li><a href="#comprarentrada">Entradas</a></li>
+      <li><a href="https://go-models.com/es/hacerse-modelo" target="_blank">Trabaja con nosotros</a></li>
+      
+    </ul>
+  </nav>
+
+
+</header>
+     
 <!--Presentación inicial con el video-->
 <div class="container-fluid bg-dark d-flex justify-content-center">
   <div class="contenido-header">
@@ -256,41 +240,8 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="nav.js"></script>
 <script src="formulariojquery.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
-<script>
-  window.addEventListener('load', () => {
-    let validadorFormulario = new FormValidator('registrarDatos', [{
-      name: 'nombre',
-      display: 'Nombre',
-      rules: 'required|min_length[10]'
-    },
-    {
-      name: 'correo',
-      display: 'Correo',
-      rules: 'required|valid_email'
-    },
-    {
-      name: 'url',
-      display: 'Sitio Web',
-      rules: 'valid_url'
-    },
-    {
-      name: 'tarjetaCredito',
-      display: 'Tarjeta de Crédito',
-      rules: 'valid_credit_card'
-    }], function(errores, evento) {
-      if (errores.length) {
-        let mensaje = '';
 
-        errores.forEach(function(campo, indice, arreglo) {
-          mensaje += `${campo.message} <br/>`;
-        });
-
-      document.querySelector('#resultadoValidacion').innerHTML = mensaje;
-      }
-    });
-  });
 
 </script>
 </body>

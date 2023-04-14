@@ -43,3 +43,18 @@ $(document).ready(function(){
       $("#elemento3").hide();
     });
   });
+
+  //caca//
+ 
+
+
+  //movimiento del header//
+  
+  window.addEventListener("scroll", function(){
+    var header = document.getElementById("header")
+    if (window.scrollY>0) {
+        header.style.backgroundColor="#191919";
+    }else{
+        header.style.backgroundColor="transparent";
+    }
+})
