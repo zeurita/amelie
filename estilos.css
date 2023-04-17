@@ -22,6 +22,7 @@ header .logo{
   font-size: 2em;
   letter-spacing: 2px;
   transition: 1.5s;
+  font-family: 'Bodoni Moda', serif;
 }
 nav{
   display:flex;
@@ -54,6 +55,10 @@ header ul li a{
   z-index: 3
 }
 
+/*Esto es para que cuando haga scroll, respete el espacio entre el header flotante y el contenido de navegacion*/
+section[id]{
+  scroll-margin-top:110px;
+}
 
 .contenedor-navegacion{
     position:fixed;
@@ -71,7 +76,7 @@ header ul li a{
   align-items: center;
   display:flex;
 }
-/* */
+/* A partir del video es esto*/
 .contenido-header{
     position: relative;
     
@@ -103,14 +108,15 @@ header ul li a{
     color:white;
     font-size: 5rem;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bodoni Moda', serif;
 }
 
 .texto-encabezado h3{
   color:rgb(196, 188, 188);
   font: 2rem;
   align-items:center;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Bodoni Moda', serif;
+  
 }
 
 .bordes{
@@ -126,7 +132,6 @@ header ul li a{
 }
 
 video{
-
     width:100%;
     height:100%;
 }
@@ -137,8 +142,9 @@ video{
 
 
 
+
 .texto-presentacion{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Bodoni Moda', serif;;
   color:rgb(238, 234, 234);
 
 
@@ -214,12 +220,14 @@ body  {
   padding-top: 3rem;
   padding-bottom: 3rem;
   font-size: 3rem;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Bodoni Moda', serif;
   color:white;
 }
 
 /*CARTAS*/
-
+.cardbody{
+  font-family: 'Bodoni Moda', serif;
+}
 .carta1{
   padding-left: 60px;
   padding-right: 60px;
@@ -235,7 +243,10 @@ body  {
 
 .cartahide1 h5{
   font-size: 1.5rem;
+  font-family: 'Arapey', serif;
 }
+
+
 /*formulario*/
 
 .form-label{
@@ -255,7 +266,7 @@ body  {
   padding-top: 6rem;
  
   font-size: 4rem;
-  font-family:sans-serif;
+  font-family: 'Bodoni Moda', serif;
   color:white;
 }
 
@@ -285,7 +296,7 @@ body  {
 
 .footer1{
   color:rgb(200, 200, 200);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Bodoni Moda', serif;
   display:flex;
   justify-content: center;
   padding-top: 5rem;
@@ -323,6 +334,49 @@ body  {
   text-decoration:none;
 }
 
+/*ventana*/
+
+.ventana{
+  background-color: white;
+  width:30%;
+  color:black;
+  font-size: 2rem;
+  text-align: center;
+  padding:33px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-height: 250px;
+  border-radius: 22px;
+  position:absolute;
+  left:34%;
+  top:20%;
+  display:none;
+}
+
+/*warnings*/
+
+.warnings{
+  width:200%;
+  text-align:center;
+  margin:auto;
+  color:aqua;
+  padding-top:20px;
+
+}
+
+/*segudno form*/
+
+.centrar{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom:6rem;
+}
+
+.botonCentrado{
+  display:flex;
+  justify-content: center;
+  padding:1rem;
+}
 /* Media Queris :D*/
 
 @media screen and (max-width: 450px){
@@ -370,4 +424,13 @@ body  {
     padding-right: 10px;
     width:100%;
   }
+}
+
+.hide{
+  display:none;
+}
+
+.videito{
+  
+  padding-top: 8rem;
 }

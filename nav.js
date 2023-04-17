@@ -1,7 +1,14 @@
-$("elemento").hide();
-$("elemento2").hide();
-$("elemento3").hide();
-// probando cositas//
+//Esto es para cuando cargue el documento, lo que suceda//
+
+$(document).ready(() => {
+  $("#elemento").hide();
+  $("#elemento2").hide();
+  $("#elemento3").hide();
+  $("#formcito").hide();
+  $("#videito").hide();
+})
+
+//Accion de mostrar texto al poner el mouse encima de las cartas! primera carta//
 $(document).ready(function(){
     $("#imagencita").mouseenter(function(){
       $("#imagencita").toggle();
@@ -15,7 +22,7 @@ $(document).ready(function(){
     });
   });
 
-  //el segundo//
+  //segunda carta//
 $(document).ready(function(){
     $("#imagencita2").mouseenter(function(){
       $("#imagencita2").toggle();
@@ -29,8 +36,7 @@ $(document).ready(function(){
     });
   });
 
-  //el tercero//
-  // probando cositas//
+//tercer carta//
 $(document).ready(function(){
     $("#imagencita3").mouseenter(function(){
       $("#imagencita3").hide();
@@ -44,11 +50,7 @@ $(document).ready(function(){
     });
   });
 
-  //caca//
- 
-
-
-  //movimiento del header//
+  //movimiento del header hacia abajito//
   
   window.addEventListener("scroll", function(){
     var header = document.getElementById("header")
@@ -58,3 +60,41 @@ $(document).ready(function(){
         header.style.backgroundColor="transparent";
     }
 })
+
+//comenzar experiencia boton del video//
+$(document).ready(function(){
+  $("#primerBoton").click(function(){
+    $("#texto-encabezado1").fadeToggle();
+    $("#texto-d-encabezado1").fadeToggle();
+    $("#parrafitoo").fadeToggle();
+    $("#videito").fadeToggle();
+    
+  })
+})
+//aca ya pongo el codigo del 2do form//
+
+$("#mostrarForm").click(function(){
+  $("#formcito").toggle();
+
+
+
+})
+
+//el popup cuando se envia formularios//
+
+let miSubmit= document.getElementById("submit");
+miSubmit.addEventListener("click",popup);
+
+function popup (){
+  alert("Su consulta fue enviada. Nos podremos en contacto en las próximas 48hs.");
+}
+
+let miSubmit2= document.getElementById("submit2");
+miSubmit2.addEventListener("click",popup);
+
+function popup (){
+  alert("Su consulta fue enviada. Nos podremos en contacto en las próximas 48hs.");
+}
+
+//prueba//
+

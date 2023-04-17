@@ -7,6 +7,10 @@
     <title>Amélie Pasarelas</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
@@ -27,17 +31,18 @@
 </header>
      
 <!--Presentación inicial con el video-->
-<div class="container-fluid bg-dark d-flex justify-content-center">
+
   <div class="contenido-header">
       <div class="contenedor-encabezado">
           <div class="texto-encabezado">
+            <iframe id="videito" class="videito" width="1500" height="800" src="https://www.youtube.com/embed/lm2AZ_np6Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h2 id="texto-encabezado1">OTOÑO 2023</h2>
             <h3 id="texto-d-encabezado1">Los diseños más usados en un solo lugar</h3>
 
             <p class="parrafito" id="parrafitoo">Te invitamos a venir al evento más importante de Latinoamérica</p>
 
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-outline-light" type="button" href="#presentacionid">Comenzar la experiencia</button>
+              <button class="btn btn-outline-light" type="button" id="primerBoton" href="#presentacionid">Comenzar la experiencia</button>
             </div>
           </div>
             <video autoplay loop muted>
@@ -45,7 +50,7 @@
             </video>
         </div>
   </div>
-</div>
+
 <!--Contenedor de Explicacion, quienes somos-->
 <div class=" contenedor-presentacion container justify-content-center">
   <section id="presentacionid">
@@ -85,17 +90,14 @@
       <!-- EVENTO DE MOUSEOVER-->
       <img src="./video/conseguirempleo.jpg" class="card-img-top" alt="..." id="imagencita">
       <!-- COSA INVISIBLE-->
-      <div class="cartahide1" id="elemento">
-        <h5>En nuestro gran evento tenes la oportunidad de encontrarte con personas
-          que compartan la misma pasión que vos por la moda y su impacto mundial. 
-          Alrededor de 100,000 seran reunidas en el Salon Sofitel Recoleta. Además de los cientos
-          de diseñadores mundiales que asistiran al evento.
-          ¿Qué esperas para cumplir tus sueños junto a la mejor compañía?
-        </h5>
+      <div class="cartahide1" id="elemento" >
+        <h5><strong>Los expositores exhibirán fibras elastómeras y tejidos con ellas, telas planas, avíos, tejidos de punto.
+          Amelie 2023 será el escenario ideal para que los confeccionistas y los fanaticos puedan generar nuevos contactos y
+         obtener información imprescindible acerca de dónde abastecerse para sus próximas colecciones.</strong></h5>
       </div>
       <div class="card-body">
-        <h5 class="card-title" id="textorandom1">Conectar con otras personas</h5>
-        <p class="card-text"></p>
+        <h5 class="card-title" id="textorandom1" style="font-family: 'Arapey', serif;" ><strong>Conectar con otras personas</strong></h5>
+        
       </div>
     </div>
   </div>
@@ -103,15 +105,17 @@
     <div class="card h-100">
       <img src="./video/conocermodelos.jpg" class="card-img-top" alt="..." id="imagencita2">
       <div class="cartahide1" id="elemento2">
-        <h5>En nuestro gran evento tenes la oportunidad de encontrarte con personas
-          que compartan la misma pasión que vos por la moda y su impacto mundial. 
-          Alrededor de 100,000 seran reunidas en el Salon Sofitel Recoleta. Además de los cientos
-          de diseñadores mundiales que asistiran al evento.
-          ¿Qué esperas para cumplir tus sueños junto a la mejor compañía?
-        </h5>
+        <h5><strong>En los meses de otoño
+          se presentan las colecciones de
+          alta costura. Nueva York, Londes, Milan y París son, por tradición, las semanas
+          de la moda con más repercusión y con una cobertura mediática mayor. Este año sumamos
+          a Argentina como una de las principales sedes de LATAM para la semana de la moda.
+          Es un desfile detrás de otro lo que construye la imagen del diseñador y lo destaca frente al público 
+          posicionándolo en el mercado.
+        </strong></h5>
       </div>
       <div class="card-body">
-        <h5 class="card-title" id="textorandom2" >Presenciar pasarela</h5>
+        <h5 class="card-title" id="textorandom2" style="font-family: 'Arapey', serif;" ><strong>Presenciar pasarela</strong></h5>
         <p class="card-text"></p>
       </div>
       
@@ -121,15 +125,16 @@
     <div class="card h-100">
       <img src="./video/conseguirempleo1.jpg" class="card-img-top" alt="..." id="imagencita3">
       <div class="cartahide1" id="elemento3">
-        <h5>En nuestro gran evento tenes la oportunidad de encontrarte con personas
+        <h5><strong>En nuestro gran evento tenes la oportunidad de encontrarte con personas
           que compartan la misma pasión que vos por la moda y su impacto mundial. 
           Alrededor de 100,000 seran reunidas en el Salon Sofitel Recoleta. Además de los cientos
-          de diseñadores mundiales que asistiran al evento.
+          de diseñadores mundiales que asistiran al evento, quienes ofreceran puestos de trabajo a modelos que recien
+          esten iniciando.
           ¿Qué esperas para cumplir tus sueños junto a la mejor compañía?
-        </h5>
+        </strong></h5>
       </div>
       <div class="card-body">
-        <h5 class="card-title" id="textorandom3">Oferta de empleos</h5>
+        <h5 class="card-title" id="textorandom3" style="font-family: 'Arapey', serif;" ><strong>Oferta de empleos</strong></h5>
         <p class="card-text"></p>
       </div>
       
@@ -143,10 +148,13 @@
 <h2 class="texto-separador2" id="texto-separador2">Consigue tu entrada ahora</h2>
 </section>
 
-<form class="row g-3 formulario-usuario" id="registrarDatos" name="registrarDatos" action="#" method="post">
+<form class="row g-3 formulario-usuario needs-validation" >
   <div class="col-md-6" >
-    <label for="inputEmail4" class="form-label">Nombre</label>
+    <label for="nameId" class="form-label">Nombre</label>
     <input type="text" class="form-control" id="nombre" name="nombre" required>
+    <div class="valid-feedback">
+      Perfecto!
+    </div>
   </div>
   <div class="col-md-6">
     <label for="inputPassword4" class="form-label">Apellido</label>
@@ -158,11 +166,11 @@
   </div>
   <div class="col-12">
     <label for="inputAddress2" class="form-label">Codigo postal</label>
-    <input type="number" name="zip" class="form-control" id="inputAddress2" placeholder="" required>
+    <input type="number" name="zip" class="form-control" id="codigoPostal" placeholder="" required>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">Teléfono de contacto</label>
-    <input type="text" name= "telefono" class="form-control" id="inputCity">
+    <input type="text" name= "telefono" class="form-control" id="telefono">
   </div>
   <div class="col-md-4">
     <label for="inputState" class="form-label">Dia del Evento</label>
@@ -176,7 +184,7 @@
   </div>
   <div class="col-md-2">
     <label for="inputZip" class="form-label">Cantidad de Entradas</label>
-    <input type="number" class="form-control" id="inputZip">
+    <input type="number" class="form-control" id="entradas">
   </div>
   <div class="col-12">
     <div class="form-check">
@@ -187,8 +195,38 @@
     </div>
   </div>
   <div class="col-12">
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary" id="submit">Enviar</button>
   </div>
+</form>
+
+<!--Boton para el formulario de contacto oculto!-->
+<h4 class="texto-separador2">¿Tenes dudas?</h4>
+<div class="botonCentrado">
+<button type=button class="btn btn-light botonCentrado" id="mostrarForm">Contáctanos</button>
+</div>
+
+<form class="row g-3 formulario-usuario needs-validation" id="formcito">
+    <div class="col-md-6" >
+      <label for="nameId" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="apellido" name="apellido" required>
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Obligatorio" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Escribe tu consulta...</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" href="javascript:abrir()" id="submit2">Enviar</button>
+    </div>
+    
+   
 </form>
 <!--FOOTERCITO-->
 <footer>
@@ -228,6 +266,7 @@
     
     
 </div>
+
 </footer>
 
 
