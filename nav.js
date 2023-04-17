@@ -9,7 +9,7 @@ window.addEventListener("scroll", function(){
   }
 })
 
-//Esto es para cuando cargue el documento, lo que suceda//
+//Esto es para cuando cargue el documento, lo que suceda. Utilice Jquery para esto! asi variamos un poco jaja//
 
 $(document).ready(() => {
   $("#elemento").hide();
@@ -93,7 +93,7 @@ miSubmit.addEventListener("click",popup);
 function popup (){
   alert("Su consulta fue enviada. Nos podremos en contacto en las próximas 48hs.");
 }
-
+//y este es para el 2do formulario//
 let miSubmit2= document.getElementById("submit2");
 miSubmit2.addEventListener("click",popup);
 
