@@ -135,5 +135,24 @@
         
         
     }
-    
+    .opciones{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding-top: 5rem;
+        flex-direction: column;
+      }
+      .opciones a{
+        margin: 5 5rem;
+        font-size: 0,5rem;
+      }
+
+    /*Forms*/
+    .formulario-usuario {
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+        
+    }
+
 }

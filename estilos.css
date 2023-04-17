@@ -214,8 +214,30 @@ body  {
   font-family: 'Bodoni Moda', serif;
   color:white;
 }
+ 
+/*formulario*/
+  
+ .form-label{
+  color:white;
+}
 
 
+.texto-separador2{
+
+  display:flex;
+  justify-content: center;
+  padding-top: 6rem;
+ 
+  font-size: 4rem;
+  font-family: 'Bodoni Moda', serif;
+  color:white;
+}
+.formulario-usuario{
+  padding-left:15rem;
+  padding-right: 15rem;
+  padding-top: 5rem;
+  padding-bottom:6rem;
+}
 
 
 
