@@ -1,0 +1,139 @@
+@media screen and (max-width: 450px){
+        #texto-encabezado1{  
+        padding-top: 15rem;
+        justify-content: center;
+        display:flex;
+        font-size: 1.5rem;
+        flex-direction: column;
+       
+        
+        }
+    #header{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        position:fixed;
+        top: 0rem;
+        left:-3rem;
+        
+    }
+    #videox{
+        width:100%
+        
+    }
+
+    .bordes:hover {
+        width:100%;
+    }
+    
+    header .logo{
+        display:none;
+       
+    }
+    header ul{
+        position:fixed;
+        display:flex;
+        justify-content:left;
+        z-index: 3
+      }
+
+    header ul li a{
+        font-size:0.5rem;
+        display:block;
+        flex-direction: row;
+        position:inherit;
+        width:100%;
+        height: 100%;
+        justify-content:left;
+        letter-spacing: 1px;
+        
+    }
+
+    #letras{
+        display:flex;
+
+    }
+    #texto-encabezado{
+        width:100%;
+        padding-left: 10px;
+        display:flex;
+        justify-content: center;
+    }
+    
+
+    #navheader{
+        flex-direction: column;
+
+        display:block;
+        align-items:baseline;
+        justify-content: center;
+    
+    }
+   
+    #letras{
+    position:relative;
+    flex-direction: column;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+    z-index: 3
+    }
+    #texto-d-encabezado1{
+  
+      display:flex;
+      justify-content: center;
+      font-size: 1rem;
+      color:white;
+    }
+    #texto-separador1{
+      font-size: 1.5rem;
+      display:flex;
+      justify-content: center;
+      padding:3rem;
+    }
+  
+    #imagen-presentacion{
+      display:block;
+      padding:2rem;
+  
+  
+    }
+  
+    #primera-imagen{
+      display:block;
+      margin-bottom: 1rem;
+     
+    }
+  
+    #primer-boton{
+      font-size:2rem;
+    }
+    #parrafitoo{
+      font-size: 0.9rem;
+      display:flex;
+      justify-content: center;
+      padding-left: 50px;
+      padding-right: 10px;
+      width:100%;
+    }
+  
+
+    .parrafoexplicativo{
+        font-size:1rem;
+        padding-top:10px;
+
+  }
+    .videito{
+        
+        width:70%;
+        height: 500px;
+        margin-top:50px;
+        
+        
+    }
+    
+}
