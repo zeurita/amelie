@@ -1,3 +1,14 @@
+//movimiento del header hacia abajito//
+  
+window.addEventListener("scroll", function(){
+  var header = document.getElementById("header")
+  if (window.scrollY>0) {
+      header.style.backgroundColor="#191919";
+  }else{
+      header.style.backgroundColor="transparent";
+  }
+})
+
 //Esto es para cuando cargue el documento, lo que suceda//
 
 $(document).ready(() => {
@@ -6,6 +17,18 @@ $(document).ready(() => {
   $("#elemento3").hide();
   $("#formcito").hide();
   $("#videito").hide();
+})
+
+//comenzar experiencia boton del video//
+$(document).ready(function(){
+  $("#primerBoton").click(function(){
+    $("#texto-encabezado1").fadeToggle();
+    $("#texto-d-encabezado1").fadeToggle();
+    $("#parrafitoo").fadeToggle();
+    $("#videito").fadeToggle();
+    
+    
+  })
 })
 
 //Accion de mostrar texto al poner el mouse encima de las cartas! primera carta//
@@ -50,28 +73,10 @@ $(document).ready(function(){
     });
   });
 
-  //movimiento del header hacia abajito//
   
-  window.addEventListener("scroll", function(){
-    var header = document.getElementById("header")
-    if (window.scrollY>0) {
-        header.style.backgroundColor="#191919";
-    }else{
-        header.style.backgroundColor="transparent";
-    }
-})
 
-//comenzar experiencia boton del video//
-$(document).ready(function(){
-  $("#primerBoton").click(function(){
-    $("#texto-encabezado1").fadeToggle();
-    $("#texto-d-encabezado1").fadeToggle();
-    $("#parrafitoo").fadeToggle();
-    $("#videito").fadeToggle();
-    
-  })
-})
-//aca ya pongo el codigo del 2do form//
+
+//aca es la accion del boton que despliega el 2do formcito//
 
 $("#mostrarForm").click(function(){
   $("#formcito").toggle();
@@ -80,7 +85,7 @@ $("#mostrarForm").click(function(){
 
 })
 
-//el popup cuando se envia formularios//
+//el popup cuando se envia formularios!//
 
 let miSubmit= document.getElementById("submit");
 miSubmit.addEventListener("click",popup);
@@ -96,5 +101,5 @@ function popup (){
   alert("Su consulta fue enviada. Nos podremos en contacto en las próximas 48hs.");
 }
 
-//prueba//
+
 

@@ -1,7 +1,5 @@
 /*HEADER*/
 
-
-
 header{
   position: fixed;
   top: 0;
@@ -55,27 +53,13 @@ header ul li a{
   z-index: 3
 }
 
+
 /*Esto es para que cuando haga scroll, respete el espacio entre el header flotante y el contenido de navegacion*/
 section[id]{
   scroll-margin-top:110px;
 }
 
-.contenedor-navegacion{
-    position:fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-}
-.container-fluid{
-  justify-content: center;
-  align-items: center;
-  display:flex;
-}
+
 /* A partir del video es esto*/
 .contenido-header{
     position: relative;
@@ -126,9 +110,11 @@ section[id]{
 
 }
 
+
 .bordes:hover{
     color:rgb(0, 0, 0);
     background-color:white;
+    
 }
 
 video{
@@ -136,12 +122,17 @@ video{
     height:100%;
 }
 
+.videito{
+  
+  padding-top: 8rem;
+}
+
 .parrafito{
   color:rgb(189, 172, 172);
 }
 
 
-
+/*este es el texto de bienvenidos y tal*/
 
 .texto-presentacion{
   font-family: 'Bodoni Moda', serif;;
@@ -224,213 +215,16 @@ body  {
   color:white;
 }
 
-/*CARTAS*/
-.cardbody{
-  font-family: 'Bodoni Moda', serif;
-}
-.carta1{
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.cartahide1{
-  display:flex;
-  justify-content: center;
-  padding:5rem;
-  color:rgb(27, 27, 33)
-  
-}
-
-.cartahide1 h5{
-  font-size: 1.5rem;
-  font-family: 'Arapey', serif;
-}
 
 
-/*formulario*/
-
-.form-label{
-  color:white;
-}
-
-.formulario-usuario{
-  padding-left:15rem;
-  padding-right: 15rem;
-  padding-top: 5rem;
-  padding-bottom:6rem;
-}
-.texto-separador2{
-
-  display:flex;
-  justify-content: center;
-  padding-top: 6rem;
- 
-  font-size: 4rem;
-  font-family: 'Bodoni Moda', serif;
-  color:white;
-}
-
-/*FOOTER*/
 
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding-top: 5rem;
-}
-.social-icons li {
-  margin: 0 2rem;
-}
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 3rem;
-  height: 3rem;
-  background-color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
-}
-
-.footer1{
-  color:rgb(200, 200, 200);
-  font-family: 'Bodoni Moda', serif;
-  display:flex;
-  justify-content: center;
-  padding-top: 5rem;
-}
-.footer1 h3{
-  font-size:3rem;
-}
-
-.colorcito{
-  background-color: rgb(7, 7, 7);
-  
-}
-
-.footer2 p{
-  display: flex;
-  justify-content:center;
-  padding:5rem;
-  color:rgb(173, 173, 173);
-}
-
-.opciones{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding-top: 2rem;
-  text-decoration: none;
-}
-.opciones li{
-  margin: 0 2rem;
-}
-
-.opciones a{
-  color:white;
-  text-decoration:none;
-}
-
-/*ventana*/
-
-.ventana{
-  background-color: white;
-  width:30%;
-  color:black;
-  font-size: 2rem;
-  text-align: center;
-  padding:33px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  min-height: 250px;
-  border-radius: 22px;
-  position:absolute;
-  left:34%;
-  top:20%;
-  display:none;
-}
-
-/*warnings*/
-
-.warnings{
-  width:200%;
-  text-align:center;
-  margin:auto;
-  color:aqua;
-  padding-top:20px;
-
-}
-
-/*segudno form*/
-
-.centrar{
-  display:flex;
-  justify-content: center;
-  text-align: center;
-  padding-bottom:6rem;
-}
-
-.botonCentrado{
-  display:flex;
-  justify-content: center;
-  padding:1rem;
-}
-/* Media Queris :D*/
-
-@media screen and (max-width: 450px){
-  #texto-encabezado1{  
-    padding-top: 4rem;
-    justify-content: center;
-    display:flex;
-    font-size: 1.5rem;
-  }
-  #texto-d-encabezado1{
-
-    display:flex;
-    justify-content: center;
-    font-size: 1rem;
-    color:white;
-  }
-  #texto-separador1{
-    font-size: 1.5rem;
-    display:flex;
-    justify-content: center;
-    padding:3rem;
-  }
-
-  #imagen-presentacion{
-    display:block;
-    padding:2rem;
 
 
-  }
 
-  #primera-imagen{
-    display:block;
-    margin-bottom: 1rem;
-   
-  }
 
-  #primer-boton{
-    font-size:2rem;
-  }
-  #parrafitoo{
-    font-size: 0.9rem;
-    display:flex;
-    justify-content: center;
-    padding-left: 50px;
-    padding-right: 10px;
-    width:100%;
-  }
-}
 
-.hide{
-  display:none;
-}
 
-.videito{
-  
-  padding-top: 8rem;
-}
+
+
+

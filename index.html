@@ -11,21 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="cartasyform.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 </head>
 <body>
 <!--HEADER FIJO-->
 <header id="header">
-  <a href="#" class ="logo">Amelie</a>
-  <nav>
+  <a href="#" class ="logo" id="logoamelie">Amelie</a>
+  <nav id="navheader">
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#presentacionid">Quienes somos</a></li>
-      <li><a href="#comprarentrada">Entradas</a></li>
-      <li><a href="https://go-models.com/es/hacerse-modelo" target="_blank">Trabaja con nosotros</a></li>
+      <li><a href="#presentacionid" >Quienes somos</a></li>
+      <li><a href="#comprarentrada" >Entradas</a></li>
+      <li><a href="https://go-models.com/es/hacerse-modelo" class="letras" target="_blank">Trabaja con nosotros</a></li>
       
     </ul>
   </nav>
+<!--HEADER RESPONSIVE-->
 
 
 </header>
@@ -34,7 +37,7 @@
 
   <div class="contenido-header">
       <div class="contenedor-encabezado">
-          <div class="texto-encabezado">
+          <div class="texto-encabezado" id="texto-encabezado">
             <iframe id="videito" class="videito" width="1500" height="800" src="https://www.youtube.com/embed/lm2AZ_np6Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <h2 id="texto-encabezado1">OTOÑO 2023</h2>
             <h3 id="texto-d-encabezado1">Los diseños más usados en un solo lugar</h3>
@@ -45,9 +48,12 @@
               <button class="btn btn-outline-light" type="button" id="primerBoton" href="#presentacionid">Comenzar la experiencia</button>
             </div>
           </div>
-            <video autoplay loop muted>
-            <source src="./video/cinematic.mp4">
+          <div>
+            <video autoplay loop muted id="videox" >
+            <source src="./video/cinematic.mp4" >
+            <img src="https://img2.rtve.es/i/?w=1600&i=1599041762848.jpg" class="fondo" id="fondo">
             </video>
+          </div>
         </div>
   </div>
 
@@ -149,12 +155,10 @@
 </section>
 
 <form class="row g-3 formulario-usuario needs-validation" >
-  <div class="col-md-6" >
+  <div class="col-sm-6" >
     <label for="nameId" class="form-label">Nombre</label>
     <input type="text" class="form-control" id="nombre" name="nombre" required>
-    <div class="valid-feedback">
-      Perfecto!
-    </div>
+    
   </div>
   <div class="col-md-6">
     <label for="inputPassword4" class="form-label">Apellido</label>
@@ -223,7 +227,7 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary" href="javascript:abrir()" id="submit2">Enviar</button>
+      <button type="submit" class="btn btn-primary"  id="submit2">Enviar</button>
     </div>
     
    
@@ -236,7 +240,7 @@
     </div>
     <div>
     <ul class="opciones">
-      <li><a href="#">Contacto</a></li>
+      <li><a href="https://forms.gle/hmofY1ukWxFBeUAk6" target="_blank">Contacto</a></li>
       <li><a href="https://business.vogue.es/tags/entrevista/16" target="_blank">Entrevistas</a></li>
       <li><a href="https://www.argentina.gob.ar/sites/default/files/2023/01/anexo_6778777_1.pdf" target="_blank">Bases y condiciones</a></li>
       <li><a href="https://www.vogue.com/fashion-shows?utm_medium=internal&utm_source=vogue.es" target="_blank">Produccion</a></li>
@@ -278,7 +282,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 <script src="nav.js"></script>
-<script src="formulariojquery.js"></script>
+
 
 
 
